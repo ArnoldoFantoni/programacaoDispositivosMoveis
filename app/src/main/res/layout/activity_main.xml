@@ -11,7 +11,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="Informe os números para iniciar o sorteio!"
         android:textColor="#1A30AB"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -30,5 +30,31 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:layout_constraintVertical_bias="0.255" />
+
+    <EditText
+        android:id="@+id/edMin"
+        android:layout_width="195dp"
+        android:layout_height="47dp"
+        android:ems="10"
+        android:hint="minimo"
+        android:inputType="numberSigned"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toStartOf="@+id/edMax"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.633" />
+
+    <EditText
+        android:id="@+id/edMax"
+        android:layout_width="213dp"
+        android:layout_height="47dp"
+        android:ems="10"
+        android:hint="maximo"
+        android:inputType="numberSigned"
+        app:layout_constraintBottom_toBottomOf="@+id/edMin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/edMin" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
