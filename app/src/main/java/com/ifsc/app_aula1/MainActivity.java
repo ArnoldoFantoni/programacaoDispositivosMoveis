@@ -27,14 +27,17 @@ public class MainActivity extends AppCompatActivity {
         });
 
         lv = findViewById(R.id.listView);
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(this,
+        AdpaterNomes adapter = new AdpaterNomes(this,
+        //ArrayAdapter<String> adapter = new ArrayAdapter<>(this,
                 R.layout.item_lista,
-                R.id.tvNome,
+                R.id.edNome,
                 nomes);
         lv.setAdapter(adapter);
 
+        /*
         lv.setOnItemClickListener( (parent, view, position, id) -> {
             Toast.makeText(this, nomes[position], Toast.LENGTH_LONG).show();
         });
+        */
     }
 }
